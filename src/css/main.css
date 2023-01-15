@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Abel", sans-serif;
+}
+
+body {
+  background-color: #141012;
+}
+
+.container {
+  height: 140vh;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container h1 {
+  font-size: 3.5rem;
+  letter-spacing: 5px;
+  font-weight: 400;
+  color: #cdab1e;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.container .info__container--parrafo {
+  font-size: 2rem;
+  text-align: center;
+  color: #bd7424;
+  padding: 30px 20px;
+}
+
+.form__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.form__container label {
+  color: #cdab1e;
+  font-size: 2.2rem;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.form__container input[type=number] {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  font-size: 2rem;
+  outline: none;
+  background-color: #333;
+  color: #cdab1e;
+}
+.form__container .enviar__respuesta {
+  width: 256px;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #333;
+  color: #cdab1e;
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.respuesta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.respuesta .nuevoJuego {
+  width: 256px;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #cdab1e;
+  color: #333;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  cursor: pointer;
+  margin: 0 auto;
+}
+.respuesta .respuestasAnteriores {
+  color: #cdab1e;
+}
+
+.inactive {
+  display: none;
+}
+
+/*# sourceMappingURL=main.css.map */
