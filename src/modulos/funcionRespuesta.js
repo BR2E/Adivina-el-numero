@@ -1,3 +1,15 @@
+import {input, respuesta,resAnteriores, ayudaRespuesta} from './variables'
+import {finJuegos} from './finJuego'
+
+
+
+let contador = 0;
+let intentos = '';
+let primerIntento = true;
+let numeroRandom = 1;
+
+
+
 export function comprobarRespuesta() {
 
     let valor = input.value;
@@ -14,7 +26,7 @@ export function comprobarRespuesta() {
         if (valor == numeroRandom) {
             respuesta.textContent = 'Felicidades !Ganaste';
             respuesta.style.color = '#00ff08'
-            finJuego();
+            finJuegos()
         } else if (valor != numeroRandom) {
             contador++;
             intentos += input.value + ', ';
@@ -33,7 +45,7 @@ export function comprobarRespuesta() {
         if (contador === 10) {
             respuesta.textContent = `!Perdiste  respuesta:${numeroRandom}`;
             respuesta.style.color = 'red'
-            finJuego();
+            finJuegos();
         }
     }
 
