@@ -1,6 +1,5 @@
 import {input, boton,btnReinicio} from './modulos/variables'
-import {comprobarRespuesta} from './modulos/funcionRespuesta'
-import {reinicarJuego} from './modulos/reiniciarJuego'
+import {comprobarRespuesta, reinicarJuego} from './modulos/funcionRespuesta'
 
 input.focus();
 

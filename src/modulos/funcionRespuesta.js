@@ -1,5 +1,4 @@
-import {input, respuesta,resAnteriores, ayudaRespuesta} from './variables'
-import {finJuegos} from './finJuego'
+import { input, respuesta, resAnteriores, boton, btnReinicio, ayudaRespuesta } from './variables'
 
 
 
@@ -26,7 +25,7 @@ export function comprobarRespuesta() {
         if (valor == numeroRandom) {
             respuesta.textContent = 'Felicidades !Ganaste';
             respuesta.style.color = '#00ff08'
-            finJuegos()
+            finJuego();
         } else if (valor != numeroRandom) {
             contador++;
             intentos += input.value + ', ';
@@ -45,7 +44,7 @@ export function comprobarRespuesta() {
         if (contador === 10) {
             respuesta.textContent = `!Perdiste  respuesta:${numeroRandom}`;
             respuesta.style.color = 'red'
-            finJuegos();
+            finJuego();
         }
     }
 
@@ -53,3 +52,25 @@ export function comprobarRespuesta() {
     input.focus();
 
 }
+
+function finJuego() {
+    input.disabled = true;
+    boton.disabled = true;
+    btnReinicio.style.display = 'inline'
+    ayudaRespuesta.textContent = '';
+    contador = 0;
+    primerIntento = true;
+}
+
+export function reinicarJuego() {
+    respuesta.textContent = '';
+    respuesta.style.color = '#cdab1e';
+    input.disabled = false;
+    boton.disabled = false;
+    input.value = '';
+    intentos = '';
+    contador = 0;
+    primerIntento = true;
+    btnReinicio.style.display = 'none'
+}
+
