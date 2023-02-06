@@ -8,8 +8,9 @@
 - SASS
 - JavaScript
 - Webpack
+- NodeJS
 
 
 ## Imágenes del proyecto
 
-![](./img/Captura%20desde%202023-01-04%2016-14-16.png)
+![](./dise%C3%B1o/Captura%20desde%202023-01-04%2016-14-16.png)

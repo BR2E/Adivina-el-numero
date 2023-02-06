@@ -6,9 +6,9 @@
   "scripts": {
     "build": "webpack --mode production"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["JavaScript"],
+  "author": "Efren Ruiz (BR2E) Efren.BR2E@gmail.com",
+  "license": "MIT",
   "devDependencies": {
     "sass": "^1.57.1",
     "webpack": "^5.75.0",
